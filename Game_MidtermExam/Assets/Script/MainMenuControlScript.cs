@@ -18,6 +18,7 @@ public class MainMenuControlScript : MonoBehaviour
     }
     public void StartButtonClick(Button button)
     {
+
         SceneManager.LoadScene("StageSelect");
     }
     public void CreditButtonClick(Button button)

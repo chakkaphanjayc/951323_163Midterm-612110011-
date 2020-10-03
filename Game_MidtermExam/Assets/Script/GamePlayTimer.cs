@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class GamePlayTimer : MonoBehaviour
 {
@@ -21,8 +22,8 @@ public class GamePlayTimer : MonoBehaviour
     void Update()   
     {
         Timer();
-        timea = timeC - seconds;
         TimeCount.text = "Time = " + (timea);
+        timea = timeC - seconds;
     }
     public void Timer()
     {

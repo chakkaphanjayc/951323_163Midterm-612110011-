@@ -5,7 +5,7 @@ using UnityEngine;
 public class WayPointGreen : MonoBehaviour
 {
     public GameObject Cube;
-    int Green = -3;
+    int Green = 3;
     // Start is called before the first frame update
     void Start()
     {
@@ -20,7 +20,7 @@ public class WayPointGreen : MonoBehaviour
     {
         if (other.tag == "Player")
         {
-            GamePlayTimer.timer = GamePlayTimer.timer + Green;
+            GamePlayTimer.timer = GamePlayTimer1.timea + Green;
             Destroy(Cube);
         }
     }
