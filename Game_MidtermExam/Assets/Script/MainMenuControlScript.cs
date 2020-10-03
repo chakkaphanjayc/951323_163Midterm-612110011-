@@ -6,12 +6,9 @@ using UnityEngine.UI;
 
 public class MainMenuControlScript : MonoBehaviour
 {
-    [SerializeField] InputField Input;
-    [SerializeField] Text SText;
     // Start is called before the first frame update
     void Start()
     {
-        SText.text = GameApplicationManager.Instance.NameEnter;
     }
 
     // Update is called once per frame
@@ -27,11 +24,6 @@ public class MainMenuControlScript : MonoBehaviour
     {
         SceneManager.LoadScene("Credit");
     }
-    public void OkButtonClick(Button button)
-    {
-        GameApplicationManager.Instance.NameEnter = Input.text.ToString();
-    }
-
     public void OptionsButtonClick(Button button)
     {
         if (!GameApplicationManager.Instance.IsOptionMenuActive)

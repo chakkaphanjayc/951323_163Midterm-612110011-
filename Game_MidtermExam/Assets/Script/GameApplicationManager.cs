@@ -4,8 +4,8 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public class GameApplicationManager : MonoBehaviour {
-    public string NameEnter;
-    public string Score;
+    public float timer;
+    public float Score;
     static public GameApplicationManager Instance {
         get {
             if (_singletonInstance == null) {
@@ -50,5 +50,7 @@ public class GameApplicationManager : MonoBehaviour {
     void Start () {
     }
     // Update is called once per frame
-    void Update () { }
+    void Update () {
+        Score = Score + Door.ScoreStage;
+    }
 }

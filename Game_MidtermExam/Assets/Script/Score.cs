@@ -16,6 +16,6 @@ public class Score : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        ScoreText.text = "Score  " + WayPoint.Scorecount.ToString();
+        ScoreText.text = "Score  " + (int)(GameApplicationManager.Instance.Score);
     }
 }

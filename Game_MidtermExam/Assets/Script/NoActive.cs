@@ -21,6 +21,11 @@ public class NoActive : MonoBehaviour
             SceneManager.LoadScene("Splash");
             timer = 0.0f;
         }
+         if (seconds < 5&&Input.anyKey)
+        {
+            timer = 0.0f;
+        }
+
     }
     public void Timer()
     {

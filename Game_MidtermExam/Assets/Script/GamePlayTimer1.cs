@@ -3,12 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class GamePlayTimer : MonoBehaviour
+public class GamePlayTimer1 : MonoBehaviour
 {
     public  static float timer = 0.0f;
     public static int seconds;
     public static float ScoreBack;
-    public static float timeC = 30f;
+    public static float timeC = 20f;
     public static float timea;
     Text TimeCount;
     // Start is called before the first frame update

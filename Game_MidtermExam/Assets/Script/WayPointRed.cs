@@ -2,10 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class WayPoint : MonoBehaviour
+public class WayPointRed : MonoBehaviour
 {
-    public static int Scorecount = 0;
     public GameObject Cube;
+    int red = 5;
     // Start is called before the first frame update
     void Start()
     {
@@ -20,9 +20,8 @@ public class WayPoint : MonoBehaviour
     {
         if (other.tag == "Player")
         {
-            Scorecount++;
+            GamePlayTimer.timer = GamePlayTimer.timer + red;
             Destroy(Cube);
-            
         }
     }
 }

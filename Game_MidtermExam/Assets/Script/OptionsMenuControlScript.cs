@@ -14,7 +14,6 @@ public class OptionsMenuControlScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        SText.text = GameApplicationManager.Instance.NameEnter;
         _dropdownDifficulty.value = GameApplicationManager.Instance.DifficultyLevel;
         //_toggleMusic.isOn = GameApplicationManager.Instance._isMusicEnabled;
         _toggleSFX.isOn = GameApplicationManager.Instance.SFXEnabled;
